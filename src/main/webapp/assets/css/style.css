@@ -120,6 +120,9 @@ a:focus {
     top: 2px;
     font-size: 12px;
 }
+.status_msg{
+	margin-bottom: 0;
+}
 /* Header Style */
 
 .main-navigation {
@@ -424,10 +427,13 @@ a:focus {
 
 .product-slider figure {
 	margin: 0;
+	text-align: center;
 }
 
 .product-slider figure img {
-	width: 100%;
+	max-width: 100%;
+	width: auto;
+	display: inline-block;
 }
 
 
