@@ -18,11 +18,13 @@ $(document).ready(function () {
 
     $('#privacyModal').on('show.bs.modal', function (e) {
         var loadurl = $(e.relatedTarget).data('load-url');
-        $(this).find('.modal-body').load(loadurl);
+        var hostname = document.location.origin;
+        $(this).find('.modal-body').load(hostname+"/"+loadurl);
     });
     $('#termsModal').on('show.bs.modal', function (e) {
         var loadurl = $(e.relatedTarget).data('load-url');
-        $(this).find('.modal-body').load(loadurl);
+        var hostname = document.location.origin;
+        $(this).find('.modal-body').load(hostname+"/"+loadurl);
     });
 
     $(".contact-form").on('submit', function(event) {
